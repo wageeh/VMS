@@ -1,0 +1,16 @@
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\bin\Release\netcoreapp2.2\FleetManagement.Entities.deps.json
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\bin\Release\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\bin\Release\netcoreapp2.2\FleetManagement.Entities.pdb
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.AssemblyInfo.cs
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.pdb
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\bin\Release\netcoreapp2.2\FleetManagement.Entities.deps.json
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\bin\Release\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\bin\Release\netcoreapp2.2\FleetManagement.Entities.pdb
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.csprojAssemblyReference.cache
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.AssemblyInfo.cs
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\obj\Release\netcoreapp2.2\FleetManagement.Entities.pdb

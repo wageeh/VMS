@@ -1,0 +1,119 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workflows_LA_StatusReceived_name": {
+      "defaultValue": "LA_StatusReceived",
+      "type": "String"
+    },
+    "connections_azureblob_externalid": {
+      "defaultValue": "/subscriptions/916b0659-c6c5-43ef-87ee-1af977ad2630/resourceGroups/RG_VehicleStatus/providers/Microsoft.Web/connections/azureblob",
+      "type": "String"
+    },
+    "connections_azuretables_externalid": {
+      "defaultValue": "/subscriptions/916b0659-c6c5-43ef-87ee-1af977ad2630/resourceGroups/RG_VehicleStatus/providers/Microsoft.Web/connections/azuretables",
+      "type": "String"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Logic/workflows",
+      "apiVersion": "2017-07-01",
+      "name": "[parameters('workflows_LA_StatusReceived_name')]",
+      "location": "northeurope",
+      "properties": {
+        "state": "Enabled",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "$connections": {
+              "defaultValue": {},
+              "type": "Object"
+            }
+          },
+          "triggers": {
+            "When_a_blob_is_added_or_modified_(properties_only)": {
+              "recurrence": {
+                "frequency": "Second",
+                "interval": 30
+              },
+              "splitOn": "@triggerBody()",
+              "metadata": {
+                "JTJmYmMtdmVoaWNsZXBpbmc=": "/bc-vehicleping"
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureblob']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/datasets/default/triggers/batch/onupdatedfile",
+                "queries": {
+                  "folderId": "JTJmYmMtdmVoaWNsZXBpbmc="
+                }
+              }
+            }
+          },
+          "actions": {
+            "Get_Blob_Metadata": {
+              "runAfter": {},
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureblob']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/datasets/default/files/@{encodeURIComponent(encodeURIComponent(triggerBody()?['Id']))}"
+              }
+            },
+            "Insert_or_Replace_Vehicle_Status": {
+              "runAfter": {
+                "Get_Blob_Metadata": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "body": {
+                  "ChangeNotificationSent": true,
+                  "SentTime": "@split(body('Get_Blob_Metadata')?['Name'],'_')[1]",
+                  "VehId": "@split(body('Get_Blob_Metadata')?['Name'],'_')[0]"
+                },
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azuretables']['connectionId']"
+                  }
+                },
+                "method": "put",
+                "path": "/Tables/@{encodeURIComponent('BlobVechileStatus')}/entities(PartitionKey='@{encodeURIComponent(split(body('Get_Blob_Metadata')?['Name'],'_')[0])}',RowKey='@{encodeURIComponent(split(body('Get_Blob_Metadata')?['Name'],'_')[0])}')"
+              }
+            }
+          },
+          "outputs": {}
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "azureblob": {
+                "connectionId": "[parameters('connections_azureblob_externalid')]",
+                "connectionName": "azureblob",
+                "id": "/subscriptions/916b0659-c6c5-43ef-87ee-1af977ad2630/providers/Microsoft.Web/locations/northeurope/managedApis/azureblob"
+              },
+              "azuretables": {
+                "connectionId": "[parameters('connections_azuretables_externalid')]",
+                "connectionName": "azuretables",
+                "id": "/subscriptions/916b0659-c6c5-43ef-87ee-1af977ad2630/providers/Microsoft.Web/locations/northeurope/managedApis/azuretables"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

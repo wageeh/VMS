@@ -1,0 +1,228 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workflows_LA_StatusRequested_name": {
+            "defaultValue": "LA_StatusRequested",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Logic/workflows",
+            "apiVersion": "2017-07-01",
+            "name": "[parameters('workflows_LA_StatusRequested_name')]",
+            "location": "northeurope",
+            "properties": {
+                "state": "Enabled",
+                "definition": {
+                    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+                    "contentVersion": "1.0.0.0",
+                    "parameters": {},
+                    "triggers": {
+                        "manual": {
+                            "type": "Request",
+                            "kind": "Http",
+                            "inputs": {
+                                "schema": {
+                                    "properties": {
+                                        "Minutes": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "actions": {
+                        "For_each": {
+                            "foreach": "@body('Parse_JSON')?['value']",
+                            "actions": {
+                                "Condition": {
+                                    "actions": {
+                                        "Append_to_Result_Array": {
+                                            "runAfter": {},
+                                            "type": "AppendToArrayVariable",
+                                            "inputs": {
+                                                "name": "ResultArray",
+                                                "value": "@items('For_each')"
+                                            }
+                                        }
+                                    },
+                                    "runAfter": {
+                                        "Parse_JSON_2": [
+                                            "Succeeded"
+                                        ]
+                                    },
+                                    "expression": {
+                                        "and": [
+                                            {
+                                                "greaterOrEquals": [
+                                                    "@addMinutes(body('Parse_JSON_2')?['SentTime'],triggerBody()?['Minutes'])",
+                                                    "@utcNow()"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "type": "If"
+                                },
+                                "Parse_JSON_2": {
+                                    "runAfter": {},
+                                    "type": "ParseJson",
+                                    "inputs": {
+                                        "content": "@items('For_each')",
+                                        "schema": {
+                                            "properties": {
+                                                "ChangeNotificationSent": {
+                                                    "type": "boolean"
+                                                },
+                                                "PartitionKey": {
+                                                    "type": "string"
+                                                },
+                                                "RowKey": {
+                                                    "type": "string"
+                                                },
+                                                "SentTime": {
+                                                    "type": "string"
+                                                },
+                                                "Timestamp": {
+                                                    "type": "string"
+                                                },
+                                                "VehId": {
+                                                    "type": "string"
+                                                },
+                                                "odata.etag": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            },
+                            "runAfter": {
+                                "Initialize_Result_Array": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Foreach"
+                        },
+                        "HTTP": {
+                            "runAfter": {},
+                            "type": "Http",
+                            "inputs": {
+                                "headers": {
+                                    "Accept": "application/json",
+                                    "x-ms-version": "2017-11-09"
+                                },
+                                "method": "GET",
+                                "uri": "https://blobvehiclestatus.table.core.windows.net/BlobVechileStatus?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2021-02-05T19:49:40Z&st=2020-02-01T11:49:40Z&spr=https,http&sig=6mWPeJbJ4xliVP%2B5y8M5q%2FI6yXhiR6v8OZrgAc0Ai1U%3D"
+                            }
+                        },
+                        "Initialize_Result_Array": {
+                            "runAfter": {
+                                "Parse_JSON": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "InitializeVariable",
+                            "inputs": {
+                                "variables": [
+                                    {
+                                        "name": "ResultArray",
+                                        "type": "array"
+                                    }
+                                ]
+                            }
+                        },
+                        "Parse_JSON": {
+                            "runAfter": {
+                                "HTTP": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "ParseJson",
+                            "inputs": {
+                                "content": "@body('HTTP')",
+                                "schema": {
+                                    "properties": {
+                                        "odata.metadata": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "items": {
+                                                "properties": {
+                                                    "ChangeNotificationSent": {
+                                                        "type": "boolean"
+                                                    },
+                                                    "PartitionKey": {
+                                                        "type": "string"
+                                                    },
+                                                    "RowKey": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentTime": {
+                                                        "type": "string"
+                                                    },
+                                                    "Timestamp": {
+                                                        "type": "string"
+                                                    },
+                                                    "VehId": {
+                                                        "type": "string"
+                                                    },
+                                                    "odata.etag": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "odata.etag",
+                                                    "PartitionKey",
+                                                    "RowKey",
+                                                    "Timestamp",
+                                                    "ChangeNotificationSent",
+                                                    "SentTime",
+                                                    "VehId"
+                                                ],
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "Response": {
+                            "runAfter": {
+                                "For_each": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Response",
+                            "kind": "Http",
+                            "inputs": {
+                                "body": "@variables('ResultArray')",
+                                "statusCode": 200
+                            }
+                        },
+                        "Terminate": {
+                            "runAfter": {
+                                "Response": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Terminate",
+                            "inputs": {
+                                "runStatus": "Succeeded"
+                            }
+                        }
+                    },
+                    "outputs": {}
+                },
+                "parameters": {}
+            }
+        }
+    ]
+}

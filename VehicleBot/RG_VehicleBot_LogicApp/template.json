@@ -1,0 +1,219 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workflows_LA_VehicleSim_name": {
+      "defaultValue": "LA_VehicleSim",
+      "type": "String"
+    },
+    "connections_azureblob_externalid": {
+      "defaultValue": "/subscriptions/916b0659-c6c5-43ef-87ee-1af977ad2630/resourceGroups/RG_VehicleBot/providers/Microsoft.Web/connections/azureblob",
+      "type": "String"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Logic/workflows",
+      "apiVersion": "2017-07-01",
+      "name": "[parameters('workflows_LA_VehicleSim_name')]",
+      "location": "northeurope",
+      "properties": {
+        "state": "Enabled",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "$connections": {
+              "defaultValue": {},
+              "type": "Object"
+            }
+          },
+          "triggers": {
+            "Recurrence": {
+              "recurrence": {
+                "frequency": "Second",
+                "interval": 40
+              },
+              "type": "Recurrence"
+            }
+          },
+          "actions": {
+            "HTTP": {
+              "runAfter": {},
+              "type": "Http",
+              "inputs": {
+                "method": "GET",
+                "uri": "https://altenfmapi.azurewebsites.net/api/fleet"
+              }
+            },
+            "Loop_Customers": {
+              "foreach": "@body('HTTP')",
+              "actions": {
+                "Loop_Cutomer_Vehicles": {
+                  "foreach": "@body('Parse_JSON')?['vehicles']",
+                  "actions": {
+                    "Condition_to_make_a_new_status_file": {
+                      "actions": {
+                        "Create_blob_file_with_id_-_time": {
+                          "runAfter": {},
+                          "type": "ApiConnection",
+                          "inputs": {
+                            "body": "@items('Loop_Cutomer_Vehicles')",
+                            "host": {
+                              "connection": {
+                                "name": "@parameters('$connections')['azureblob']['connectionId']"
+                              }
+                            },
+                            "method": "post",
+                            "path": "/datasets/default/files",
+                            "queries": {
+                              "folderPath": "/bc-vehicleping",
+                              "name": "@{body('Parse_JSON_2')?['vin']}_@{utcNow()}",
+                              "queryParametersSingleEncoded": true
+                            }
+                          },
+                          "runtimeConfiguration": {
+                            "contentTransfer": {
+                              "transferMode": "Chunked"
+                            }
+                          }
+                        }
+                      },
+                      "runAfter": {
+                        "Parse_JSON_2": [
+                          "Succeeded"
+                        ]
+                      },
+                      "expression": {
+                        "and": [
+                          {
+                            "lessOrEquals": [
+                              "@rand(0,4)",
+                              2
+                            ]
+                          }
+                        ]
+                      },
+                      "type": "If"
+                    },
+                    "Parse_JSON_2": {
+                      "runAfter": {},
+                      "type": "ParseJson",
+                      "inputs": {
+                        "content": "@items('Loop_Cutomer_Vehicles')",
+                        "schema": {
+                          "properties": {
+                            "regid": {
+                              "type": "string"
+                            },
+                            "vin": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "runAfter": {
+                    "Parse_JSON": [
+                      "Succeeded"
+                    ]
+                  },
+                  "type": "Foreach",
+                  "runtimeConfiguration": {
+                    "concurrency": {
+                      "repetitions": 20
+                    }
+                  }
+                },
+                "Parse_JSON": {
+                  "runAfter": {},
+                  "type": "ParseJson",
+                  "inputs": {
+                    "content": "@items('Loop_Customers')",
+                    "schema": {
+                      "properties": {
+                        "address": {
+                          "properties": {
+                            "city": {
+                              "type": "string"
+                            },
+                            "details": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "vehicles": {
+                          "items": {
+                            "properties": {
+                              "regid": {
+                                "type": "string"
+                              },
+                              "vin": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "vin",
+                              "regid"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  }
+                }
+              },
+              "runAfter": {
+                "HTTP": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Foreach",
+              "runtimeConfiguration": {
+                "concurrency": {
+                  "repetitions": 20
+                }
+              }
+            },
+            "Terminate": {
+              "runAfter": {
+                "Loop_Customers": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Succeeded"
+              }
+            }
+          },
+          "outputs": {}
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "azureblob": {
+                "connectionId": "[parameters('connections_azureblob_externalid')]",
+                "connectionName": "azureblob",
+                "id": "/subscriptions/916b0659-c6c5-43ef-87ee-1af977ad2630/providers/Microsoft.Web/locations/northeurope/managedApis/azureblob"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

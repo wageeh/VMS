@@ -1,0 +1,8 @@
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\bin\Debug\netcoreapp3.0\FleetManagement.Entities.deps.json
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\bin\Debug\netcoreapp3.0\FleetManagement.Entities.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\bin\Debug\netcoreapp3.0\FleetManagement.Entities.pdb
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp3.0\FleetManagement.Entities.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp3.0\FleetManagement.Entities.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp3.0\FleetManagement.Entities.AssemblyInfo.cs
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp3.0\FleetManagement.Entities.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp3.0\FleetManagement.Entities.pdb

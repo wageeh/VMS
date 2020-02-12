@@ -1,0 +1,62 @@
+D:\personal Docs\Alten\VMS\FleetManagement.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\personal Docs\Alten\VMS\FleetManagement.API\bin\Debug\netcoreapp2.2\appsettings.json
+D:\personal Docs\Alten\VMS\FleetManagement.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\personal Docs\Alten\VMS\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.deps.json
+D:\personal Docs\Alten\VMS\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.runtimeconfig.json
+D:\personal Docs\Alten\VMS\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.runtimeconfig.dev.json
+D:\personal Docs\Alten\VMS\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.dll
+D:\personal Docs\Alten\VMS\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.pdb
+D:\personal Docs\Alten\VMS\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorAssemblyInfo.cache
+D:\personal Docs\Alten\VMS\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorAssemblyInfo.cs
+D:\personal Docs\Alten\VMS\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\VMS\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.AssemblyInfo.cs
+D:\personal Docs\Alten\VMS\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorTargetAssemblyInfo.cache
+D:\personal Docs\Alten\VMS\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.dll
+D:\personal Docs\Alten\VMS\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.pdb
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorAssemblyInfo.cache
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorAssemblyInfo.cs
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.AssemblyInfo.cs
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\Microsoft.Azure.Documents.ServiceInterop.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\Cosmos.CRTCompat.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\appsettings.json
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.deps.json
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.runtimeconfig.json
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.runtimeconfig.dev.json
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.pdb
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.Repository.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.Entities.pdb
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.Repository.pdb
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorTargetAssemblyInfo.cache
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.csproj.CopyComplete
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.dll
+D:\personal Docs\Alten\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.pdb
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\Microsoft.Azure.Documents.ServiceInterop.dll
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\Cosmos.CRTCompat.dll
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\appsettings.json
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.deps.json
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.runtimeconfig.json
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.runtimeconfig.dev.json
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.dll
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.API.pdb
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.Repository.dll
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.Entities.pdb
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\bin\Debug\netcoreapp2.2\FleetManagement.Repository.pdb
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.csprojAssemblyReference.cache
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorAssemblyInfo.cache
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorAssemblyInfo.cs
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.AssemblyInfo.cs
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.RazorTargetAssemblyInfo.cache
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.csproj.CopyComplete
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.dll
+D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.API\obj\Debug\netcoreapp2.2\FleetManagement.API.pdb

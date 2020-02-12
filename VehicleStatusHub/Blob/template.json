@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "storageAccounts_blobvehiclestatus_name": {
+            "defaultValue": "blobvehiclestatus",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-06-01",
+            "name": "[parameters('storageAccounts_blobvehiclestatus_name')]",
+            "location": "northeurope",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "Storage",
+            "properties": {
+                "networkAcls": {
+                    "bypass": "AzureServices",
+                    "virtualNetworkRules": [],
+                    "ipRules": [],
+                    "defaultAction": "Allow"
+                },
+                "supportsHttpsTrafficOnly": true,
+                "encryption": {
+                    "services": {
+                        "file": {
+                            "keyType": "Account",
+                            "enabled": true
+                        },
+                        "blob": {
+                            "keyType": "Account",
+                            "enabled": true
+                        }
+                    },
+                    "keySource": "Microsoft.Storage"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts/blobServices",
+            "apiVersion": "2019-06-01",
+            "name": "[concat(parameters('storageAccounts_blobvehiclestatus_name'), '/default')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_blobvehiclestatus_name'))]"
+            ],
+            "sku": {
+                "name": "Standard_LRS"
+            },
+            "properties": {
+                "cors": {
+                    "corsRules": []
+                },
+                "deleteRetentionPolicy": {
+                    "enabled": false
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts/fileServices",
+            "apiVersion": "2019-06-01",
+            "name": "[concat(parameters('storageAccounts_blobvehiclestatus_name'), '/default')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_blobvehiclestatus_name'))]"
+            ],
+            "sku": {
+                "name": "Standard_LRS"
+            },
+            "properties": {
+                "cors": {
+                    "corsRules": []
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+            "apiVersion": "2019-06-01",
+            "name": "[concat(parameters('storageAccounts_blobvehiclestatus_name'), '/default/bc-vehicleping')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_blobvehiclestatus_name'), 'default')]",
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_blobvehiclestatus_name'))]"
+            ],
+            "properties": {
+                "publicAccess": "Container"
+            }
+        }
+    ]
+}

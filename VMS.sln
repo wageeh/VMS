@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FleetManagement", "FleetManagement", "{B821ACCE-E3BD-431E-AE1E-2DE042709A35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FleetManagement.Entities", "FleetManagement\FleetManagement.Entities\FleetManagement.Entities.csproj", "{7E82FECC-FB7C-4B69-8E9B-93C438EA8C59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FleetManagement.Repository", "FleetManagement\FleetManagement.Repository\FleetManagement.Repository.csproj", "{1E51F6EB-F2FA-40B1-B20E-09E87CE5A2AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VehicleBot", "VehicleBot", "{BABBB233-9F5C-43A6-8FD5-8EDFDD9076BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VehicleStatusHub", "VehicleStatusHub", "{1DE2769C-DB6A-4F4E-AC8E-A4D84E80D20D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure_ARM_Templates", "Azure_ARM_Templates", "{FFBFEC48-DFE8-4312-AF3E-4504FA8D27D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinuxPlan_WebApp", "LinuxPlan_WebApp", "{028C19BB-178E-4E4F-AEC8-C4A5D309DA19}"
+	ProjectSection(SolutionItems) = preProject
+		FleetManagement\Azure_ARM_Templates\LinuxPlan_WebApp\parameters.json = FleetManagement\Azure_ARM_Templates\LinuxPlan_WebApp\parameters.json
+		FleetManagement\Azure_ARM_Templates\LinuxPlan_WebApp\template.json = FleetManagement\Azure_ARM_Templates\LinuxPlan_WebApp\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CosmosDB", "CosmosDB", "{10F0BFA6-85D9-4A4A-82E7-AA79DF86782A}"
+	ProjectSection(SolutionItems) = preProject
+		FleetManagement\Azure_ARM_Templates\parameters.json = FleetManagement\Azure_ARM_Templates\parameters.json
+		FleetManagement\Azure_ARM_Templates\template.json = FleetManagement\Azure_ARM_Templates\template.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FleetManagement.API", "FleetManagement\FleetManagement.API\FleetManagement.API.csproj", "{B949127D-FEA0-4813-93A0-29819FDD7A12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publish_Profile", "Publish_Profile", "{D4601D90-810B-4A33-AC14-999A22CEB828}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LA_VehicleSim", "LA_VehicleSim", "{0DAC1442-FD96-45DE-AC5B-B5D46EF598D0}"
+	ProjectSection(SolutionItems) = preProject
+		VehicleBot\RG_VehicleBot_LogicApp\parameters.json = VehicleBot\RG_VehicleBot_LogicApp\parameters.json
+		VehicleBot\RG_VehicleBot_LogicApp\template.json = VehicleBot\RG_VehicleBot_LogicApp\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlobStorage", "BlobStorage", "{E5D6E0FF-53CF-4F89-9C57-1C5DFA140037}"
+	ProjectSection(SolutionItems) = preProject
+		VehicleStatusHub\Blob\parameters.json = VehicleStatusHub\Blob\parameters.json
+		VehicleStatusHub\Blob\template.json = VehicleStatusHub\Blob\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LA_StatusReceived", "LA_StatusReceived", "{05F1ABC8-467D-4F32-A66D-3B077801FC97}"
+	ProjectSection(SolutionItems) = preProject
+		VehicleStatusHub\LogicApp\LA_StatusReceived\parameters.json = VehicleStatusHub\LogicApp\LA_StatusReceived\parameters.json
+		VehicleStatusHub\LogicApp\LA_StatusReceived\template.json = VehicleStatusHub\LogicApp\LA_StatusReceived\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LogicApps", "LogicApps", "{3052F081-C550-4B0E-9986-C24C950C5042}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LA_StatusRequested", "LA_StatusRequested", "{AC427C6A-3853-4C72-8D73-38CB59EE00FF}"
+	ProjectSection(SolutionItems) = preProject
+		VehicleStatusHub\LogicApp\LA_StatusRequested\parameters.json = VehicleStatusHub\LogicApp\LA_StatusRequested\parameters.json
+		VehicleStatusHub\LogicApp\LA_StatusRequested\template.json = VehicleStatusHub\LogicApp\LA_StatusRequested\template.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FleetManagement.API.UnitTests", "FleetManagement\FleetManagment.API.UnitTests\FleetManagement.API.UnitTests.csproj", "{F89F43E5-4B04-4513-AFFF-3F1F0879C1A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E82FECC-FB7C-4B69-8E9B-93C438EA8C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E82FECC-FB7C-4B69-8E9B-93C438EA8C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E82FECC-FB7C-4B69-8E9B-93C438EA8C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E82FECC-FB7C-4B69-8E9B-93C438EA8C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E51F6EB-F2FA-40B1-B20E-09E87CE5A2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E51F6EB-F2FA-40B1-B20E-09E87CE5A2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E51F6EB-F2FA-40B1-B20E-09E87CE5A2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E51F6EB-F2FA-40B1-B20E-09E87CE5A2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B949127D-FEA0-4813-93A0-29819FDD7A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B949127D-FEA0-4813-93A0-29819FDD7A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B949127D-FEA0-4813-93A0-29819FDD7A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B949127D-FEA0-4813-93A0-29819FDD7A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89F43E5-4B04-4513-AFFF-3F1F0879C1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89F43E5-4B04-4513-AFFF-3F1F0879C1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89F43E5-4B04-4513-AFFF-3F1F0879C1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89F43E5-4B04-4513-AFFF-3F1F0879C1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E82FECC-FB7C-4B69-8E9B-93C438EA8C59} = {B821ACCE-E3BD-431E-AE1E-2DE042709A35}
+		{1E51F6EB-F2FA-40B1-B20E-09E87CE5A2AE} = {B821ACCE-E3BD-431E-AE1E-2DE042709A35}
+		{FFBFEC48-DFE8-4312-AF3E-4504FA8D27D7} = {B821ACCE-E3BD-431E-AE1E-2DE042709A35}
+		{028C19BB-178E-4E4F-AEC8-C4A5D309DA19} = {FFBFEC48-DFE8-4312-AF3E-4504FA8D27D7}
+		{10F0BFA6-85D9-4A4A-82E7-AA79DF86782A} = {FFBFEC48-DFE8-4312-AF3E-4504FA8D27D7}
+		{B949127D-FEA0-4813-93A0-29819FDD7A12} = {B821ACCE-E3BD-431E-AE1E-2DE042709A35}
+		{D4601D90-810B-4A33-AC14-999A22CEB828} = {FFBFEC48-DFE8-4312-AF3E-4504FA8D27D7}
+		{0DAC1442-FD96-45DE-AC5B-B5D46EF598D0} = {BABBB233-9F5C-43A6-8FD5-8EDFDD9076BB}
+		{E5D6E0FF-53CF-4F89-9C57-1C5DFA140037} = {1DE2769C-DB6A-4F4E-AC8E-A4D84E80D20D}
+		{05F1ABC8-467D-4F32-A66D-3B077801FC97} = {3052F081-C550-4B0E-9986-C24C950C5042}
+		{3052F081-C550-4B0E-9986-C24C950C5042} = {1DE2769C-DB6A-4F4E-AC8E-A4D84E80D20D}
+		{AC427C6A-3853-4C72-8D73-38CB59EE00FF} = {3052F081-C550-4B0E-9986-C24C950C5042}
+		{F89F43E5-4B04-4513-AFFF-3F1F0879C1A9} = {B821ACCE-E3BD-431E-AE1E-2DE042709A35}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CADEB914-D609-4EB3-892A-C8EE692D3621}
+	EndGlobalSection
+EndGlobal

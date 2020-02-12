@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\wageeh.girgis\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\wageeh.girgis\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ]
+  }
+}
