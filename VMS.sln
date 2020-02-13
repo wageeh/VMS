@@ -23,8 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinuxPlan_WebApp", "LinuxPl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CosmosDB", "CosmosDB", "{10F0BFA6-85D9-4A4A-82E7-AA79DF86782A}"
 	ProjectSection(SolutionItems) = preProject
-		FleetManagement\Azure_ARM_Templates\parameters.json = FleetManagement\Azure_ARM_Templates\parameters.json
-		FleetManagement\Azure_ARM_Templates\template.json = FleetManagement\Azure_ARM_Templates\template.json
+		FleetManagement\Azure_ARM_Templates\CosmosDB\parameters.json = FleetManagement\Azure_ARM_Templates\CosmosDB\parameters.json
+		FleetManagement\Azure_ARM_Templates\CosmosDB\template.json = FleetManagement\Azure_ARM_Templates\CosmosDB\template.json
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FleetManagement.API", "FleetManagement\FleetManagement.API\FleetManagement.API.csproj", "{B949127D-FEA0-4813-93A0-29819FDD7A12}"

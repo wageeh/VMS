@@ -1,52 +1,46 @@
 {
-    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "name": {
-            "type": "string"
-        },
-        "location": {
-            "type": "string"
-        },
-        "locationName": {
-            "type": "string"
-        },
-        "defaultExperience": {
-            "type": "string"
-        },
-        "isZoneRedundant": {
-            "type": "string"
+        "databaseAccounts_vmstest_name": {
+            "defaultValue": "vmstest",
+            "type": "String"
         }
     },
     "variables": {},
     "resources": [
         {
+            "type": "Microsoft.DocumentDB/databaseAccounts",
             "apiVersion": "2019-12-12",
+            "name": "[parameters('databaseAccounts_vmstest_name')]",
+            "location": "North Europe",
+            "tags": {
+                "defaultExperience": "Core (SQL)",
+                "hidden-cosmos-mmspecial": ""
+            },
             "kind": "GlobalDocumentDB",
-            "type": "Microsoft.DocumentDb/databaseAccounts",
-            "name": "[parameters('name')]",
-            "location": "[parameters('location')]",
             "properties": {
-                "databaseAccountOfferType": "Standard",
-                "locations": [
-                    {
-                        "id": "[concat(parameters('name'), '-', parameters('location'))]",
-                        "failoverPriority": 0,
-                        "locationName": "[parameters('locationName')]"
-                    }
-                ],
+                "enableAutomaticFailover": false,
                 "enableMultipleWriteLocations": false,
                 "isVirtualNetworkFilterEnabled": false,
                 "virtualNetworkRules": [],
-                "ipRangeFilter": "",
-                "dependsOn": [],
+                "disableKeyBasedMetadataWriteAccess": false,
+                "databaseAccountOfferType": "Standard",
+                "consistencyPolicy": {
+                    "defaultConsistencyLevel": "Session",
+                    "maxIntervalInSeconds": 5,
+                    "maxStalenessPrefix": 100
+                },
+                "locations": [
+                    {
+                        "locationName": "North Europe",
+                        "provisioningState": "Succeeded",
+                        "failoverPriority": 0,
+                        "isZoneRedundant": false
+                    }
+                ],
                 "capabilities": []
-            },
-            "tags": {
-                "defaultExperience": "[parameters('defaultExperience')]",
-                "hidden-cosmos-mmspecial": ""
             }
         }
-    ],
-    "outputs": {}
+    ]
 }

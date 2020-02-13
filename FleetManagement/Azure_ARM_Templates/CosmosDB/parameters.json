@@ -2,20 +2,8 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "name": {
-            "value": "cosdb-fleetmanagement"
-        },
-        "location": {
-            "value": "northeurope"
-        },
-        "locationName": {
-            "value": "North Europe"
-        },
-        "defaultExperience": {
-            "value": "Core (SQL)"
-        },
-        "isZoneRedundant": {
-            "value": "false"
+        "databaseAccounts_vmstest_name": {
+            "value": null
         }
     }
 }
