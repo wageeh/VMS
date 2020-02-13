@@ -13,3 +13,11 @@ D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagem
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp2.2\FleetManagement.Entities.dll
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp2.2\FleetManagement.Entities.pdb
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp2.2\FleetManagement.Entities.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Entities\bin\Debug\netcoreapp2.2\FleetManagement.Entities.deps.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Entities\bin\Debug\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Entities\bin\Debug\netcoreapp2.2\FleetManagement.Entities.pdb
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp2.2\FleetManagement.Entities.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp2.2\FleetManagement.Entities.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp2.2\FleetManagement.Entities.AssemblyInfo.cs
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Entities\obj\Debug\netcoreapp2.2\FleetManagement.Entities.pdb

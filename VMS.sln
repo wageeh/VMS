@@ -59,6 +59,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LA_StatusRequested", "LA_St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FleetManagement.API.UnitTests", "FleetManagement\FleetManagment.API.UnitTests\FleetManagement.API.UnitTests.csproj", "{F89F43E5-4B04-4513-AFFF-3F1F0879C1A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API Connections", "API Connections", "{12556915-1A4B-4FCB-B9A3-6281D8EC03B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azureblob", "azureblob", "{828AD7A4-AB97-498B-A606-8FFF6FA64B43}"
+	ProjectSection(SolutionItems) = preProject
+		VehicleStatusHub\API Connections\azureblob\parameters.json = VehicleStatusHub\API Connections\azureblob\parameters.json
+		VehicleStatusHub\API Connections\azureblob\template.json = VehicleStatusHub\API Connections\azureblob\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azuretables", "azuretables", "{EFD336BF-8DEB-4FC3-8D9C-80CC78A63ADA}"
+	ProjectSection(SolutionItems) = preProject
+		VehicleStatusHub\API Connections\azuretables\parameters.json = VehicleStatusHub\API Connections\azuretables\parameters.json
+		VehicleStatusHub\API Connections\azuretables\template.json = VehicleStatusHub\API Connections\azuretables\template.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +113,9 @@ Global
 		{3052F081-C550-4B0E-9986-C24C950C5042} = {1DE2769C-DB6A-4F4E-AC8E-A4D84E80D20D}
 		{AC427C6A-3853-4C72-8D73-38CB59EE00FF} = {3052F081-C550-4B0E-9986-C24C950C5042}
 		{F89F43E5-4B04-4513-AFFF-3F1F0879C1A9} = {B821ACCE-E3BD-431E-AE1E-2DE042709A35}
+		{12556915-1A4B-4FCB-B9A3-6281D8EC03B0} = {1DE2769C-DB6A-4F4E-AC8E-A4D84E80D20D}
+		{828AD7A4-AB97-498B-A606-8FFF6FA64B43} = {12556915-1A4B-4FCB-B9A3-6281D8EC03B0}
+		{EFD336BF-8DEB-4FC3-8D9C-80CC78A63ADA} = {12556915-1A4B-4FCB-B9A3-6281D8EC03B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CADEB914-D609-4EB3-892A-C8EE692D3621}

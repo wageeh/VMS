@@ -23,3 +23,28 @@ D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagme
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.runtimeconfig.json
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.runtimeconfig.dev.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\Microsoft.Azure.Documents.ServiceInterop.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\Cosmos.CRTCompat.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\appsettings.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.deps.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.runtimeconfig.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.runtimeconfig.dev.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.pdb
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.Entities.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.Repository.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.API.pdb
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.Repository.pdb
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\bin\Debug\netcoreapp2.2\FleetManagement.Entities.pdb
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\obj\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\obj\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\obj\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.AssemblyInfo.cs
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\obj\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.csproj.CopyComplete
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\obj\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagment.API.UnitTests\obj\Debug\netcoreapp2.2\FleetManagement.API.UnitTests.pdb

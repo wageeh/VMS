@@ -18,3 +18,13 @@ D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagem
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Repository\obj\Debug\netcoreapp2.2\FleetManagement.Repository.dll
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Repository\obj\Debug\netcoreapp2.2\FleetManagement.Repository.pdb
 D:\personal Docs\Alten\Vehicle Management Sytem\VMS\FleetManagement\FleetManagement.Repository\obj\Debug\netcoreapp2.2\FleetManagement.Repository.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\bin\Debug\netcoreapp2.2\Microsoft.Azure.Documents.ServiceInterop.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\bin\Debug\netcoreapp2.2\Cosmos.CRTCompat.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\bin\Debug\netcoreapp2.2\FleetManagement.Repository.deps.json
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\bin\Debug\netcoreapp2.2\FleetManagement.Repository.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\bin\Debug\netcoreapp2.2\FleetManagement.Repository.pdb
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\obj\Debug\netcoreapp2.2\FleetManagement.Repository.csprojAssemblyReference.cache
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\obj\Debug\netcoreapp2.2\FleetManagement.Repository.AssemblyInfoInputs.cache
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\obj\Debug\netcoreapp2.2\FleetManagement.Repository.AssemblyInfo.cs
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\obj\Debug\netcoreapp2.2\FleetManagement.Repository.dll
+D:\personal Docs\Alten\VMS-Latest\VMS\FleetManagement\FleetManagement.Repository\obj\Debug\netcoreapp2.2\FleetManagement.Repository.pdb
