@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\VehicleBot",
+    "\\VehicleBot\\RG_VehicleBot_LogicApp",
+    "\\VehicleStatusHub",
+    "\\VehicleStatusHub\\API Connections",
+    "\\VehicleStatusHub\\API Connections\\azureblob",
+    "\\VehicleStatusHub\\API Connections\\azuretables",
+    "\\VehicleStatusHub\\LogicApp",
+    "\\VehicleStatusHub\\LogicApp\\LA_StatusReceived",
+    "\\VehicleStatusHub\\LogicApp\\LA_StatusRequested"
   ],
-  "SelectedNode": "\\FleetManagement",
+  "SelectedNode": "\\VehicleBot\\RG_VehicleBot_LogicApp\\template.json",
   "PreviewInSolutionExplorer": false
 }

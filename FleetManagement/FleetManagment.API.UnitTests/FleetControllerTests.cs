@@ -39,7 +39,7 @@ namespace FleetManagement.API.UnitTests
         }
 
         [TestMethod]
-        public void Get_Filtered_CustomersAsync()
+        public void Get_Filtered_CustomersAsync_Count()
         {
             //Act
             List<Customer> actualCustomers = customerManager.FilterByNameAsync(searchname).Result;
@@ -50,13 +50,13 @@ namespace FleetManagement.API.UnitTests
         }
 
         [TestMethod]
-        public void Get_All_CustomersAsync()
+        public void Get_All_CustomersAsync_Exists()
         {
             //Act
             List<Customer> actualCustomers = customerManager.ListAsync().Result;
 
             //Assert
-            Assert.IsTrue(expectedCustomers.Count().Equals(actualCustomers.Count()));
+            Assert.IsNotNull(actualCustomers);
 
         }
         /*
